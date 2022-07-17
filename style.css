@@ -27,7 +27,7 @@ h2{
     letter-spacing: 15px;
     color: #0e3742;
     text-transform: uppercase;
-    width: 100%;
+    max-width: 1100px;
     text-align: center;
     -webkit-box-reflect: below 1px linear-gradient(transparent, #0004);
     line-height: 0.70em;

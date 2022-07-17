@@ -10,7 +10,6 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    min-width: 1100px;
     min-height: 100vh;
     background: #07252d;
 }
@@ -28,7 +27,7 @@ h2{
     letter-spacing: 15px;
     color: #0e3742;
     text-transform: uppercase;
-    max-width: 1100px;
+    width: 100%;
     text-align: center;
     -webkit-box-reflect: below 1px linear-gradient(transparent, #0004);
     line-height: 0.70em;

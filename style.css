@@ -1,9 +1,17 @@
+:root{
+    --base-color: #07252d;
+    --text-color: #0e3742;
+    --glow-color:  #03bcf4;
+}
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
+    transition: all 0.5s linear;
 }
+
 
 body{
     display: flex;
@@ -11,21 +19,80 @@ body{
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background: #07252d;
+    background: var(--base-color);
 }
 
 .WaterMark1{
     position: absolute;
-    color: #0e3742;
-    padding-top: 100%;
+    color:var(--text-color);
+    padding-top: 50%;
     text-align: center;
+}
+
+.color-switch{
+    position: fixed;
+    top: 25px; 
+    right: -200px;
+    width: 200px;
+    padding: 10px;
+    background: #fff;
+    z-index: 1000;
+}
+
+.color-switch.active{
+    right: 0px;
+}
+
+.color-switch h3{
+    color: var(--base-color);
+    font-size: 20px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    padding: 5px 0;
+    text-align: center;
+}
+
+.color-switch .switch-btn{
+    position: absolute;
+    top: 0;
+    left: -75px;
+    background: var(--text-color);
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 35px;
+}
+
+.color-switch .switch-btn i{
+    animation:rotate 2s linear infinite;
+}
+
+@keyframes rotate{
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+.color-switch .theme-buttons-containner{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+.color-switch .theme-buttons-containner .theme-buttons{
+    display: block;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    margin: 5px;
+    cursor: pointer;
 }
 
 h2{
     position: relative;
     font-size: 6em;
     letter-spacing: 15px;
-    color: #0e3742;
+    color: var(--text-color);
     text-transform: uppercase;
     width: 100%;
     text-align: center;
@@ -36,15 +103,15 @@ h2{
 }
 @keyframes animate{
     0%,18%,20%,50.1%,60%,65.1%,80%,90.1%,92%{
-        color: #0e3742;
+        color: var(--text-color);
         text-shadow: none;
     }
     18.1%,20.1%,30%,50%,60.1%,65%,80.1%,90%,92.1%,100%{
         color: #fff;
-        text-shadow: 0 0 10px #03bcf4,
-        0 0 20px #03bcf4,
-        0 0 40px #03bcf4,
-        0 0 80px #03bcf4,
-        0 0 160px #03bcf4;
+        text-shadow: 0 0 10px var(--glow-color),
+        0 0 20px var(--glow-color),
+        0 0 40px var(--glow-color),
+        0 0 80px var(--glow-color),
+        0 0 160px var(--glow-color);
     }
 }

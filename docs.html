@@ -14,7 +14,7 @@
             <ul>
                 <li>
                     <a href="index.html">
-                        <span class="icon"></span>
+                        <span class="icon"><img src="GlowText WebLogo2.ico" alt=""></span>
                         <span class="title">GlowText</span>
                     </a>
                 </li>
@@ -26,7 +26,7 @@
                 </li>
                 <li>
                     <a href="">
-                        <span class="icon"><ion-icon name="document-text-outline"></ion-icon></span>
+                        <span class="icon"><ion-icon name="notifications-outline"></ion-icon></span>
                         <span class="title">Updates</span>
                     </a>
                 </li>
@@ -39,16 +39,16 @@
             </ul>
         </div>
 
-        <div class="main">
+        <div class="menu">
             <div class="topbar">
                 <div class="toggle">
                     <ion-icon name="menu-outline"></ion-icon>
                 </div>
                 <div class="search">
-                    <h1>Welcome to GlowText Documents</h1>
+                    <h3>Welcome to GlowText Documents</h3>
                 </div>
                 <div class="back">
-                    <a href="index.html"><ion-icon name="menu-outline"></ion-icon></a>
+                    <a href="index.html"><ion-icon name="arrow-back-outline"></ion-icon></a>
                 </div>
             </div>
         </div>
@@ -59,11 +59,11 @@
 <script>
     let toggle = document.querySelector('.toggle');
     let navigation = document.querySelector('.navigation');
-    let main = document.querySelector('.main');
+    let menu = document.querySelector('.menu');
 
-    toggle.onClick = function () {
+    toggle.onclick = function(){
         navigation.classList.toggle('active');
-        main.classList.toggle('active');
+        menu.classList.toggle('active');
     }
 
     let list = document.querySelectorAll('.navigation li');

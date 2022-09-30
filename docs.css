@@ -173,7 +173,7 @@ body{
     cursor: pointer;
 }
 
-.back a{
+.back a ion-icon{
     justify-content: center;
     align-items: center;
     width: 100%;

@@ -3,13 +3,11 @@
     padding: 0;
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
-    transition: all 0.5s linear;
 }
 :root{
-    --base-color: #07252d;
-    --text-color: #0e3742;
-    --glow-color:  #03bcf4;
-    --white : #fff;
+    --base-color: #0e3742;
+    --text-color:  #03bcf4;
+    --white :  #65dbff;
 }
 
 body{
@@ -85,7 +83,7 @@ body{
 }
 
 .navigation ul li a .icon ion-icon{
-    font-size: 1.75px;
+    font-size: 1.75em;
 }
 
 .navigation ul li a .title{
@@ -122,11 +120,11 @@ body{
     height: 50px;
     background: transparent;
     border-radius: 50%;
-    box-shadow: 35px 35px 0 10px var(--base-color);
+    box-shadow: 35px -35px 0 10px var(--base-color);
     pointer-events: none;
 }
 
-.main{
+.menu{
     position: absolute;
     width: calc(100% - 300px);
     left: 300px;
@@ -135,7 +133,7 @@ body{
     transition: 0.5s;
 }
 
-.main.active{
+.menu.active{
     width: calc(100% - 80px);
     left: 80px;
 }
@@ -169,18 +167,13 @@ body{
 
 .back{
     position: relative;
-    min-width: 40px;
+    display: flex;
+    width: 40px;
     height: 40px;
-    border-radius: 50%;
-    overflow: hidden;
     cursor: pointer;
 }
 
 .back a{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+    justify-content: center;
+    align-items: center;
 }

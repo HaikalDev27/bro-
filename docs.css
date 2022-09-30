@@ -173,6 +173,12 @@ body{
     cursor: pointer;
 }
 
+.back a{
+    justify-content: center;
+    align-items: center;
+}
+
 .back a ion-icon{
-    font-size: 1.75em;
+    font-size: 200px;
+    list-style: none;
 }

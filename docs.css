@@ -183,6 +183,7 @@ section{
     display: flex;
     max-width: auto;
     height: auto;
+    font-size: medium;
 }
 
 section .decs {
@@ -193,7 +194,7 @@ section .decs {
     border: 1px solid black;
 }
 
-section .decs h1{
+section h1{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     padding-bottom: 15px;
 }
@@ -204,11 +205,6 @@ section .version {
     font-size: medium;
     font-family: 'Courier New', Courier, monospace;
     border: 1px solid black;
-}
-
-section .version h1{
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    padding-bottom: 15px;
 }
 
 section .version .transparant{

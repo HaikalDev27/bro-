@@ -176,3 +176,45 @@ body{
     font-size: 2.5em;
     cursor: pointer;
 }
+
+section{
+    padding: 10px;
+    display: flex;
+    max-width: auto;
+    height: 100vh;
+}
+
+section .decs {
+    padding: 20px;
+    justify-content: center;
+    font-size: medium;
+    font-family: 'Courier New', Courier, monospace;
+    border: 1px solid black;
+}
+
+section .decs h1{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding-bottom: 15px;
+}
+
+section .version {
+    padding: 20px;
+    justify-content: center;
+    font-size: medium;
+    font-family: 'Courier New', Courier, monospace;
+    border: 1px solid black;
+}
+
+section .version h1{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding-bottom: 15px;
+}
+
+section .version table{
+    width: auto;
+    font-size: 1.25em;
+}
+
+section .version table tr td{
+    text-align: center;
+}

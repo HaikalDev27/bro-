@@ -182,7 +182,7 @@ section{
     padding: 10px;
     display: flex;
     max-width: auto;
-    height: 100vh;
+    height: auto;
 }
 
 section .decs {

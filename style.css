@@ -43,6 +43,16 @@ body{
     right: 0px;
 }
 
+.color-switch a ion-icon{
+    width: 180px;
+    color: var(--base-color);
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    padding: 5px 0;
+    text-align: center;
+}
+
 .color-switch h3{
     color: var(--base-color);
     font-size: 20px;

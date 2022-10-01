@@ -211,6 +211,10 @@ section .version h1{
     padding-bottom: 15px;
 }
 
+section .version .transparant{
+    color: transparent;
+}
+
 section .version table{
     width: auto;
     font-size: 1.25em;

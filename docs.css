@@ -182,9 +182,11 @@ section{
     display: flex;
     max-width: auto;
     height: auto;
+
 }
 
-section p{
+section .version p,
+section .decs p{
     font-size: 20px;
     font-weight: lighter;
     font-family: 'Courier New', Courier, monospace;
@@ -199,6 +201,7 @@ section .decs {
 }
 
 section .decs h1{
+    font-size: 1.25em;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     padding-bottom: 15px;
 }
@@ -214,6 +217,7 @@ section .version {
 }
 
 section .version h1{
+    font-size: 1.25em;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     padding-bottom: 15px;
 }

@@ -199,6 +199,8 @@ section .decs h1{
 
 section .version {
     padding: 20px;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     font-size: medium;
     font-family: 'Courier New', Courier, monospace;
@@ -218,6 +220,7 @@ section .version table{
     padding: 10px;
     width: auto;
     font-size: 1.25em;
+    justify-content: center;
 }
 
 section .version table tr td{

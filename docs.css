@@ -189,7 +189,13 @@ section .version p,
 section .decs p{
     font-size: 20px;
     font-weight: lighter;
-    font-family: 'Courier New', Courier, monospace;
+}
+
+section .version h1,
+section .decs h1{
+    font-size: large;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding-bottom: 15px;
 }
 
 section .decs {
@@ -200,12 +206,6 @@ section .decs {
     border: 1px solid black;
 }
 
-section .decs h1{
-    font-size: 1.25em;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    padding-bottom: 15px;
-}
-
 section .version {
     padding: 20px;
     display: flex;
@@ -214,12 +214,6 @@ section .version {
     font-size: medium;
     font-family: 'Courier New', Courier, monospace;
     border: 1px solid black;
-}
-
-section .version h1{
-    font-size: 1.25em;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    padding-bottom: 15px;
 }
 
 section .version .transparant{

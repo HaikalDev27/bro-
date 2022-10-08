@@ -56,3 +56,61 @@
 <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>glow text</title>
+    <link rel="icon" type="image/x-icon" href="GlowText WebLogo2.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+    <div class="color-switch">
+        <div class="switch-btn">
+            <i class="fas fa-cog"></i>
+        </div>
+        <a href="docs.html">
+            <ion-icon name="document-text-outline"></ion-icon> 
+        </a>
+        
+        <h3>Colors</h3>
+
+        <div class="theme-buttons-containner">
+            <span class="theme-buttons" data-base="#2d0707" data-text="#420e0ez" data-anm="#f40303" style="background: #2d0707;"></span>
+            <span class="theme-buttons" data-base="#07252d" data-text="#0e3742" data-anm="#03bcf4" style="background: #07252d;"></span>
+            <span class="theme-buttons" data-base="#FF9300" data-text="#FF5403" data-anm="#FFCA03" style="background: #FF9300;"></span>
+        </div>
+    </div>
+
+<body>
+    <h2 contenteditable="true">Hello</h2>
+    
+    <div class="WaterMark1">
+        <h3>Powered by GitHub</h3>
+        <h5>Made by Haikal Apriliano [FumetsuChigura]</h5>
+    </div>
+</body>
+
+<script>
+    document.querySelector('.switch-btn').onclick = () =>{
+        document.querySelector('.color-switch').classList.toggle('active');
+    };
+
+    let themeButtons = document.querySelectorAll('.theme-buttons');
+    themeButtons.forEach(color =>{
+        color.addEventListener('click', () =>{
+            let dataBase = color.getAttribute('data-base');
+            document.querySelector(':root').style.setProperty('--base-color', dataBase);
+            let dataText = color.getAttribute('data-text');
+            document.querySelector(':root').style.setProperty('--text-color', dataText);
+            let dataAnm = color.getAttribute('data-anm');
+            document.querySelector(':root').style.setProperty('--glow-color', dataAnm);
+        });
+    });
+</script>
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</html>
